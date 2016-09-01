@@ -1,0 +1,4 @@
+<%= form_for @project, url: project_index_path, html: { multipart: true } do |form| %>
+  <%= form.file_field :image %>
+  <%= form.submit %>
+<% end %>

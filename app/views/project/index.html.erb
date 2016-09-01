@@ -1,2 +1,3 @@
-<h1>Project#index</h1>
-<p>Find me in app/views/project/index.html.erb</p>
+<% @projects.each do |project| %>
+  <%= image_tag project.image.url(:medium) %>
+<% end %>
